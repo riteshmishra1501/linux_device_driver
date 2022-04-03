@@ -1,0 +1,2 @@
+This is sample code for creating the device with major and minor number which we can check cat /proc/devices it will reflect major number with device name created there
+which is RiteshMishra
