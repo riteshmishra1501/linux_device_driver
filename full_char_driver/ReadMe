@@ -1,0 +1,5 @@
+Full fledged char driver which has capability of copy_to_user and copy_from_user to and from user application
+
+when we open user app(my_userapp) and select read operation in switch case out my_read() function will get called which will eventually call copy_to_user
+
+when select write operation from switch case our my_write() from driver get called which eventually call copyu_from_user()
