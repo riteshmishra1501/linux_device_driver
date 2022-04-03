@@ -1,0 +1,12 @@
+define file operation on decvice file created in last code
+using structure struct file_operatio {
+.owner = THIS_MODULE,
+        .read  = my_read,
+        .write = my_write,
+        .open = my_open,
+        .release = my_close,
+}
+important APIs being used ->
+//alloc_chrdev_region --> allocating the major and minor number dynamically
+//cdev_init(&char_dev, &fops)  initialize cdev
+//cdev_add(&char_dev, dev, 1)  add chardev in system
