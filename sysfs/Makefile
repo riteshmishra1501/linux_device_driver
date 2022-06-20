@@ -1,7 +1,8 @@
-obj-m += hello_world.o
- 
-KDIR = /lib/modules/$(shell uname -r)/build
+obj-m += sysfs.o
 
+CONFIG_MODULE_SIG=n
+
+KDIR = /lib/modules/$(shell uname -r)/build
  
 all:
 	make -C $(KDIR)  M=$(shell pwd) modules
